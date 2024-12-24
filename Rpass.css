@@ -1,0 +1,62 @@
+/* Declaration of variables */
+:root{
+    --background-color : #4c5b61;
+    --text-color:#c5c5c5;
+    --btnbackground: #358fe486;
+    --btnBackgroundHover:#001f54;
+    --btnTextColor:#f9f4f5;
+    --transition : all .3s linear;
+    --letterSpacing : .25rem;
+    --font-family: Georgia,sans-serif;
+}
+::after
+::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-container{
+    margin: 2rem 0;
+    padding : 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    color:var(--text-color);
+    background-color:var(--background-color);
+    font-family:var(--font-family);
+    z-index: -111;
+}
+.name{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.container h4{
+    letter-spacing:var(--letterSpacing);
+    line-height: 1em;
+}
+button{
+    background-color:var(--btnbackground);
+    color:var(--btnTextColor);
+    border: none;
+    height:2rem;
+    width:6rem;
+    font-size:1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    letter-spacing:.1rem;
+}
+
+button:hover{
+    background-color:var(--btnBackgroundHover);
+}
+.output{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.output-pass{
+    color: #25af5f7c;
+}
